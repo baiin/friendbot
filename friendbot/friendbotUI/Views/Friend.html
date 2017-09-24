@@ -1,0 +1,31 @@
+﻿<div ng-controller="FriendCtrl">
+    <div id="my-nav">
+        <h2 id="nav-title">friendbot</h2>
+    </div>
+
+    <div id="message-container">
+        <ul class="list-group">
+            <li class="list-group-item col-xs-11 bubble"  
+                ng-repeat="message in messages"
+                ng-class="{'user-message': message.fromUser}">
+                <p>{{ message.Body }}</p>
+
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="business in message.Businesses">
+                        <img ng-src="{{ business.image_url}}" height="60" width="60"/>
+                        <span>{{ business.name }}</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="input-container">
+        <input type="text" 
+               class="form-control" 
+               placeholder="type here . . ."
+               id="input-box"
+               ng-model="inputText"
+               ng-keydown="keydown($event)" />
+    </div>
+</div>

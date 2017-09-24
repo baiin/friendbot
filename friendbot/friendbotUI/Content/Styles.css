@@ -1,0 +1,54 @@
+﻿#my-nav {
+    height: 60px;
+    background-color: #333333;
+}
+
+#nav-title {
+    padding: 10px;
+    margin: 0px;
+    color: white;
+}
+
+#input-container {
+    height: 60px;
+    background-color: #333333;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    padding: 10px;
+}
+
+#message-container {
+    margin: 0;
+    padding: 15px;
+    overflow-y: scroll;
+
+    position: fixed;
+    bottom: 60px;
+    top: 60px;
+    left: 0;
+    right: 0;
+
+    background-color: #f2f2f2;
+}
+
+#input-box {
+    height: 40px;
+}
+
+.user-message {
+    float: right;
+    clear: right;
+    background-color: #333333;
+    color: white;
+}
+
+.bubble {
+    border: 0;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px #cccccc;
+    border-radius: 5px;
+}
